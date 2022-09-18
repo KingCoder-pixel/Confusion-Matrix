@@ -20,8 +20,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, rand
 LR = LogisticRegression() 
 LR.fit(X_train,y_train)
 
-#X_test = np.reshape(X_test, (-1,1))
-#Y_test = np.reshape(y_test, (-1,1))
 
 
 y_prediction = LR.predict(X_test)
